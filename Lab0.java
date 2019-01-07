@@ -157,17 +157,23 @@ public class Lab0 {
 	 * 		{@code n > 0}  
 	 */
 	public static boolean isPrime(int n) {
-		boolean result = true;
+		if (n >0) {
 		
-			
+			boolean result = true;
 		for (int i=2;i<n ; i++) {
-			if(n % i == 0 && n>0 == true) {
+			
+			if(n % i == 0 ) {
                 result = false;
 			}	
 		}
 		return result;
+		
+		}
+		else
+			return false;
+
+		
 	}
-	
 	/**
 	 * This method checks the element of the list of integers and 
 	 * return the number (count) of  of prime integers.
